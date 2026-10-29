@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080c18"><title>کانفیگ‌پلاس | فروش کانفیگ</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#080c18;--panel:#111a2d;--text:#f5f7ff;--muted:#9caac4;--purple:#8664ff;--cyan:#4de5d3;--line:#ffffff18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#282052 0,transparent 35%),radial-gradient(ellipse at 0% 45%,#10363b 0,transparent 30%),var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.8}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.logo{display:grid;place-items:center;width:43px;height:43px;border-radius:14px;background:linear-gradient(135deg,var(--purple),var(--cyan));font-size:1.5rem;color:#07121c}
+nav{display:flex;gap:23px;color:#c4cce0;font-size:.92rem}nav a:hover{color:var(--cyan)}.search{width:145px;min-width:100px;padding:9px 12px;background:#ffffff08;border:1px solid var(--line);border-radius:12px;color:white;outline:none}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 19px;border:0;border-radius:13px;background:linear-gradient(115deg,var(--purple),#5b7aff);color:white;font-weight:800;cursor:pointer;box-shadow:0 8px 28px #765cff30;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.secondary{background:#ffffff0b;border:1px solid var(--line);box-shadow:none}.danger{background:linear-gradient(120deg,#b93660,#7e315c)}.small{padding:8px 12px;font-size:.88rem}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;padding:65px 0 75px}.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 13px;border:1px solid var(--line);background:#ffffff08;border-radius:40px;color:#d0d9ed;font-size:.86rem}.dot{width:8px;height:8px;background:var(--cyan);border-radius:50%;box-shadow:0 0 13px var(--cyan)}
+h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.25;letter-spacing:-1.6px;margin:20px 0}h1 span{background:linear-gradient(90deg,var(--cyan),#b9a4ff);color:transparent;background-clip:text}.lead{color:var(--muted);max-width:570px;font-size:1.05rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.visual{position:relative;display:grid;place-items:center;min-height:355px}.orb{position:absolute;width:280px;height:280px;border-radius:50%;background:linear-gradient(135deg,#765aff66,#35e0d226);box-shadow:0 0 100px #7158ff2b}.showcase{position:relative;width:min(340px,100%);padding:27px;border:1px solid #ffffff24;border-radius:26px;background:linear-gradient(145deg,#18233cee,#0e1527f5);box-shadow:0 30px 90px #0008}.infinity{font-size:2.5rem;color:var(--cyan)}.showcase h2{margin:5px 0}.muted{color:var(--muted)}.price{font-size:2.2rem;font-weight:900;color:white}.price small{font-size:.9rem;font-weight:500;color:var(--muted)}
+section{padding:43px 0}.section-title{text-align:center;font-size:2rem;margin:0 0 8px}.section-sub{text-align:center;color:var(--muted);margin:0 auto 30px;max-width:650px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{min-width:0;padding:22px;border-radius:21px;border:1px solid var(--line);background:linear-gradient(150deg,#ffffff0b,#ffffff04);box-shadow:0 14px 40px #0002;overflow-wrap:anywhere}.card:hover{border-color:#8e7aff77;transform:translateY(-3px);transition:.2s}.card-icon{width:47px;height:47px;display:grid;place-items:center;border-radius:15px;background:#8564ff22;color:#c5b8ff;font-size:1.5rem}.card h3{margin:13px 0 4px}.card p{color:var(--muted);font-size:.92rem;white-space:pre-wrap;overflow-wrap:anywhere}.card-price{font-size:1.4rem;font-weight:900;margin:12px 0}.card .btn{width:100%;margin-top:7px}.empty{padding:32px;border:1px dashed #ffffff28;border-radius:18px;color:var(--muted);text-align:center;grid-column:1/-1}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:21px;border:1px solid var(--line);background:#ffffff06;border-radius:18px}.feature h3{margin:5px 0}.feature p{margin:0;color:var(--muted);font-size:.9rem}
+.faq{max-width:780px;margin:auto;display:grid;gap:10px}.faq details{padding:16px 20px;border:1px solid var(--line);border-radius:14px;background:#ffffff06}.faq summary{cursor:pointer;font-weight:700}.faq p{color:var(--muted)}
+.order{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:35px auto 65px;padding:30px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(120deg,#171a36,#10232d)}.order h2{margin:0}.order p{margin:4px 0 0;color:var(--muted)}
+footer{padding:23px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#8492ad;font-size:.84rem}
+.overlay{position:fixed;inset:0;z-index:20;background:#030611dc;backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;padding:16px}.overlay.show{display:flex}.modal{width:min(640px,100%);max-height:92vh;overflow:auto;padding:25px;border-radius:23px;border:1px solid #ffffff25;background:#10182b;box-shadow:0 25px 100px #000b}.modal h2{margin:0 0 5px}.modal>p{color:var(--muted);font-size:.9rem}.field{display:grid;gap:6px;margin:13px 0}.field label{font-size:.9rem;color:#d8e0f2}.field input,.field textarea{width:100%;padding:11px 13px;border:1px solid #ffffff20;border-radius:11px;background:#080e1b;color:white;outline:none}.field textarea{min-height:120px;resize:vertical}.field input:focus,.field textarea:focus{border-color:var(--cyan)}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.modal-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.tiny{font-size:.8rem!important;color:#ffd99a!important;background:#ffb54712;border:1px solid #ffb54730;padding:10px 12px;border-radius:12px}.manage-list{display:grid;gap:10px;margin-top:20px}.manage-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border-radius:13px;border:1px solid var(--line);background:#ffffff06}.manage-item div:first-child{min-width:0}.manage-item strong{display:block;overflow-wrap:anywhere}.manage-item small{color:var(--muted)}.manage-buttons{display:flex;gap:7px;flex-shrink:0}.toast{display:none;position:fixed;z-index:40;bottom:22px;left:50%;transform:translateX(-50%);max-width:92%;padding:12px 18px;border:1px solid #ffffff25;border-radius:13px;background:#18243a;text-align:center}.toast.show{display:block}
+@media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;padding:40px 0 55px;gap:15px}.visual{min-height:340px}.cards,.features{grid-template-columns:1fr 1fr}.order{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){header{flex-wrap:wrap}.search{order:3;width:100%}.top-link{margin-right:auto}.cards,.features,.row{grid-template-columns:1fr}.section-title{font-size:1.65rem}.hero{padding-top:30px}.manage-item{align-items:flex-start;flex-direction:column}.modal{padding:19px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#"><span class="logo">∞</span><span>کانفیگ‌پلاس</span></a>
+  <nav><a href="#configs">کانفیگ‌ها</a><a href="#features">امکانات</a><a href="#faq">سوالات متداول</a></nav>
+  <input class="search" id="siteSearch" type="search" placeholder="جست‌وجو..." aria-label="جست‌وجو">
+  <a class="btn small top-link" href="#configs">مشاهده پلن‌ها ←</a>
+</header>
+<main>
+  <div class="wrap hero">
+    <div><div class="pill"><span class="dot"></span> انتخاب ساده، تجربه بهتر</div>
+      <h1>کانفیگ مناسب تو،<br><span>بدون پیچیدگی</span></h1>
+      <p class="lead">کانفیگ موردنظرت رو انتخاب کن. پلن‌ها و اطلاعات هر کانفیگ اینجا نمایش داده می‌شن؛ سفارش با چند کلیک شروع می‌شه.</p>
+      <div class="actions"><a class="btn" href="#configs">دیدن کانفیگ‌ها ↓</a><a class="btn secondary" href="#features">امکانات سایت</a></div>
+      <p class="muted" style="font-size:.83rem">قیمت و جزئیات هر مورد را پیش از سفارش بررسی کن.</p>
+    </div>
+    <div class="visual"><div class="orb"></div><div class="showcase"><div class="infinity">∞</div><h2>کانفیگ‌پلاس</h2><p class="muted">فضایی مرتب برای انتخاب و سفارش</p><div class="price">۲۷۰٬۰۰۰ <small>تومان / ماه</small></div><p class="muted">تعرفه نامحدود یک‌ماهه</p><a class="btn" href="#configs">مشاهده تعرفه ←</a></div></div>
+  </div>
+  <section id="configs"><div class="wrap"><h2 class="section-title">کانفیگ‌های موجود</h2><p class="section-sub">کانفیگ‌های ثبت‌شده توسط مالک در این قسمت نمایش داده می‌شوند.</p><div class="cards" id="configCards"></div></div></section>
+  <section id="features"><div class="wrap"><h2 class="section-title">تجربه‌ای ساده و شفاف</h2><p class="section-sub">اطلاعات هر کانفیگ را ببین و بعد برای سفارش اقدام کن.</p><div class="features">
+    <article class="feature"><div>⚡</div><h3>دسترسی سریع</h3><p>مشاهده گزینه‌ها و شروع سفارش در چند مرحله ساده.</p></article>
+    <article class="feature"><div>🧩</div><h3>چند کانفیگ</h3><p>مالک می‌تواند کانفیگ‌های مختلف را از پنل اضافه و مدیریت کند.</p></article>
+    <article class="feature"><div>💬</div><h3>ارتباط تلگرامی</h3><p>پس از پیام اطلاع‌رسانی، کاربر به آیدی تنظیم‌شده هدایت می‌شود.</p></article>
+  </div></div></section>
+  <section id="faq"><div class="wrap"><h2 class="section-title">سوالات متداول</h2><p class="section-sub">راهنمای کوتاه استفاده از سایت</p><div class="faq">
+    <details><summary>چطور کانفیگ‌ها را اضافه کنم؟</summary><p>در جست‌وجوی بالای سایت عبارت malek را وارد کن، وارد پنل شو و فرم افزودن کانفیگ را پر کن.</p></details>
+    <details><summary>قیمت‌ها از کجا می‌آیند؟</summary><p>قیمت هر کارت هنگام ثبت یا ویرایش کانفیگ توسط مالک تعیین می‌شود.</p></details>
+    <details><summary>آیا دکمه سفارش پرداخت آنلاین انجام می‌دهد؟</summary><p>خیر؛ این نسخه کاربر را پس از پیام کوتاه به تلگرام هدایت می‌کند. برای پرداخت واقعی باید درگاه پرداخت امن جداگانه راه‌اندازی شود.</p></details>
+  </div></div></section>
+  <section class="wrap"><div class="order"><div><h2>برای سفارش آماده‌ای؟</h2><p>یک کانفیگ از فهرست انتخاب کن و ادامه بده.</p></div><a class="btn" href="#configs">انتخاب کانفیگ ←</a></div></section>
+</main>
+<footer class="wrap"><span>© کانفیگ‌پلاس</span><span>تعرفه پایه: ۲۷۰٬۰۰۰ تومان</span></footer>
+
+<div class="overlay" id="ownerLogin" role="dialog" aria-modal="true"><div class="modal">
+  <h2>ورود مالک 👑</h2><p>برای مدیریت کانفیگ‌ها، رمز پنل را وارد کن.</p>
+  <form id="loginForm"><div class="field"><label for="ownerPassword">رمز عبور</label><input id="ownerPassword" type="password" required autocomplete="current-password"></div><div class="modal-actions"><button class="btn" type="submit">ورود به پنل</button><button class="btn secondary" type="button" data-close="ownerLogin">انصراف</button></div></form>
+  <p class="tiny">رمز پیش‌فرض نسخه نمایشی: 1234. این فایل برای پنل عمومی امن نیست؛ برای انتشار واقعی از احراز هویت سمت سرور استفاده کن.</p>
+</div></div>
+
+<div class="overlay" id="ownerPanel" role="dialog" aria-modal="true"><div class="modal">
+  <h2>پنل مدیریت مالک <span style="color:var(--cyan)">✦</span></h2><p>کانفیگ اضافه کن، موارد قبلی را ویرایش یا حذف کن و تنظیمات سفارش را مدیریت کن.</p>
+  <form id="configForm">
+    <input type="hidden" id="editId">
+    <div class="field"><label for="configName">نام کانفیگ</label><input id="configName" required maxlength="80" placeholder="مثلاً کانفیگ نامحدود یک‌ماهه"></div>
+    <div class="row"><div class="field"><label for="configPrice">قیمت به تومان</label><input id="configPrice" type="number" min="0" required placeholder="270000"></div><div class="field"><label for="configDuration">مدت اعتبار</label><input id="configDuration" maxlength="50" placeholder="مثلاً ۱ ماهه"></div></div>
+    <div class="field"><label for="configDescription">توضیحات</label><textarea id="configDescription" maxlength="1000" placeholder="ویژگی‌ها و توضیحات کانفیگ..."></textarea></div>
+    <div class="field"><label for="configText">متن کانفیگ</label><textarea id="configText" required maxlength="12000" placeholder="متن کانفیگ را اینجا وارد کن..." style="min-height:145px"></textarea></div>
+    <div class="modal-actions"><button class="btn" type="submit" id="saveConfigBtn">＋ افزودن کانفیگ</button><button class="btn secondary" type="button" id="cancelEdit" style="display:none">لغو ویرایش</button></div>
+  </form>
+  <div class="divider" style="height:1px;background:var(--line);margin:22px 0"></div>
+  <h3>کانفیگ‌های ثبت‌شده</h3><div class="manage-list" id="manageList"></div>
+  <div class="divider" style="height:1px;background:var(--line);margin:22px 0"></div>
+  <h3>تنظیمات پنل و سفارش</h3>
+  <form id="settingsForm"><div class="row"><div class="field"><label for="newPassword">رمز جدید پنل</label><input id="newPassword" type="password" minlength="4" placeholder="حداقل ۴ کاراکتر"></div><div class="field"><label for="confirmPassword">تکرار رمز جدید</label><input id="confirmPassword" type="password" minlength="4" placeholder="تکرار رمز جدید"></div></div>
+    <div class="field"><label for="telegramUser">آیدی تلگرام مقصد (بدون @)</label><input id="telegramUser" placeholder="مثلاً my_username"></div>
+    <div class="modal-actions"><button class="btn" type="submit">ذخیره تنظیمات</button><button class="btn secondary" type="button" data-close="ownerPanel">بستن پنل</button></div>
+  </form>
+  <p class="tiny">داده‌های این نمونه فقط در همین مرورگر ذخیره می‌شوند و در دستگاه‌های دیگر در دسترس نیستند. متن کانفیگ ممکن است حساس باشد؛ برای سایت واقعی از سرور امن استفاده کن.</p>
+</div></div>
+
+<div class="overlay" id="paymentNotice" role="dialog" aria-modal="true"><div class="modal" style="text-align:center"><div style="font-size:2.3rem">✈️</div><h2>لطفاً پرداخت را در تلگرام انجام دهید</h2><p style="color:var(--muted)">تا چند ثانیه دیگر به تلگرام منتقل می‌شوید…</p><p id="countdown" style="font-size:1.7rem;color:var(--cyan);font-weight:900">۳</p><button class="btn secondary" type="button" id="cancelTransfer">انصراف</button></div></div>
+<div class="overlay" id="configReveal" role="dialog" aria-modal="true"><div class="modal"><h2 id="revealTitle">جزئیات کانفیگ</h2><p id="revealDescription" style="white-space:pre-wrap"></p><div class="field"><label for="revealText">متن کانفیگ</label><textarea id="revealText" readonly style="min-height:150px"></textarea></div><div class="modal-actions"><button class="btn" id="copyConfig" type="button">کپی متن کانفیگ</button><button class="btn secondary" type="button" data-close="configReveal">بستن</button></div><p class="tiny">نمایش متن کانفیگ در این نسخه قبل از پرداخت محدود نشده است؛ برای فروش واقعی، تحویل کانفیگ را به تأیید پرداخت در سمت سرور متصل کن.</p></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const show = id => $(id).classList.add('show');
+  const hide = id => $(id).classList.remove('show');
+  const toast = msg => { $('toast').textContent=msg; show('toast'); setTimeout(()=>hide('toast'),3000); };
+  const uid = () => Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+  const getConfigs = () => { try { return JSON.parse(localStorage.getItem('cp_configs')||'null') || [{id:'default-plan',name:'کانفیگ نامحدود یک‌ماهه',price:270000,duration:'۱ ماهه',description:'تعرفه پایه کانفیگ‌پلاس. جزئیات سرویس را پیش از سفارش بررسی کن.',text:''}]; } catch { return []; } };
+  let configs = getConfigs(), selectedConfig = null, timer = null;
+  const saveConfigs = () => localStorage.setItem('cp_configs',JSON.stringify(configs));
+  const money = n => Number(n||0).toLocaleString('fa-IR');
+  const escapeHtml = value => String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const password = () => localStorage.getItem('cp_owner_password') || '1234';
+  const telegram = () => (localStorage.getItem('cp_telegram_user')||'').replace(/^@/,'').trim();
+
+  function renderCards(filter='') {
+    const q=filter.trim().toLowerCase();
+    const found=configs.filter(c=>(c.name+' '+c.description+' '+c.duration).toLowerCase().includes(q));
+    $('configCards').innerHTML=found.length?found.map(c=>`<article class="card"><div class="card-icon">∞</div><h3>${escapeHtml(c.name)}</h3><p>${escapeHtml(c.description||'بدون توضیحات')}</p><div class="card-price">${money(c.price)} <span style="font-size:.85rem;color:var(--muted)">تومان</span></div><p>اعتبار: ${escapeHtml(c.duration||'نامشخص')}</p><button class="btn" data-order="${escapeHtml(c.id)}">سفارش این کانفیگ ←</button></article>`).join(''):'<div class="empty">موردی پیدا نشد. مالک می‌تواند از پنل کانفیگ اضافه کند.</div>';
+    document.querySelectorAll('[data-order]').forEach(b=>b.addEventListener('click',()=>startOrder(b.dataset.order)));
+  }
+  function renderManage() {
+    $('manageList').innerHTML=configs.length?configs.map(c=>`<div class="manage-item"><div><strong>${escapeHtml(c.name)}</strong><small>${money(c.price)} تومان · ${escapeHtml(c.duration||'مدت نامشخص')}</small></div><div class="manage-buttons"><button class="btn small" type="button" data-edit="${escapeHtml(c.id)}">ویرایش</button><button class="btn danger small" type="button" data-delete="${escapeHtml(c.id)}">حذف</button></div></div>`).join(''):'<div class="empty">هنوز کانفیگی ثبت نشده است.</div>';
+    document.querySelectorAll('[data-edit]').forEach(b=>b.addEventListener('click',()=>editConfig(b.dataset.edit)));
+    document.querySelectorAll('[data-delete]').forEach(b=>b.addEventListener('click',()=>deleteConfig(b.dataset.delete)));
+  }
+  function resetForm(){ $('configForm').reset();$('editId').value='';$('saveConfigBtn').textContent='＋ افزودن کانفیگ';$('cancelEdit').style.display='none'; }
+  function editConfig(id){const c=configs.find(x=>x.id===id);if(!c)return;$('editId').value=c.id;$('configName').value=c.name;$('configPrice').value=c.price;$('configDuration').value=c.duration||'';$('configDescription').value=c.description||'';$('configText').value=c.text||'';$('saveConfigBtn').textContent='ذخیره تغییرات';$('cancelEdit').style.display='inline-flex';$('configName').focus();}
+  function deleteConfig(id){const c=configs.find(x=>x.id===id);if(!c)return;if(!confirm('کانفیگ «'+c.name+'» حذف شود؟'))return;configs=configs.filter(x=>x.id!==id);saveConfigs();renderCards($('siteSearch').value==='malek'?'':$('siteSearch').value);renderManage();if($('editId').value===id)resetForm();toast('کانفیگ حذف شد.');}
+  function startOrder(id){selectedConfig=configs.find(c=>c.id===id);if(!selectedConfig)return;const tg=telegram();if(!tg){toast('مالک باید ابتدا آیدی تلگرام را در پنل ثبت کند.');return;}show('paymentNotice');let n=3;$('countdown').textContent='۳';timer=setInterval(()=>{n--;if(n<=0){clearInterval(timer);timer=null;hide('paymentNotice');location.href='https://t.me/'+encodeURIComponent(tg)+'?text='+encodeURIComponent('سلام، برای سفارش «'+selectedConfig.name+'» به قیمت '+money(selectedConfig.price)+' تومان پیام می‌دهم.');}else $('countdown').textContent=['','۱','۲','۳'][n];},1000);}
+  $('siteSearch').addEventListener('input',e=>{if(e.target.value.trim().toLowerCase()==='malek'){e.target.value='';$('ownerPassword').value='';show('ownerLogin');$('ownerPassword').focus();return;}renderCards(e.target.value);});
+  $('loginForm').addEventListener('submit',e=>{e.preventDefault();if($('ownerPassword').value===password()){hide('ownerLogin');$('telegramUser').value=telegram();renderManage();show('ownerPanel');}else toast('رمز عبور اشتباه است.');});
+  $('configForm').addEventListener('submit',e=>{e.preventDefault();const id=$('editId').value;const item={id:id||uid(),name:$('configName').value.trim(),price:Number($('configPrice').value),duration:$('configDuration').value.trim(),description:$('configDescription').value.trim(),text:$('configText').value.trim()};if(!item.name||!item.text)return toast('نام و متن کانفیگ را وارد کن.');if(!Number.isFinite(item.price)||item.price<0)return toast('قیمت معتبر وارد کن.');if(id)configs=configs.map(c=>c.id===id?item:c);else configs.unshift(item);saveConfigs();resetForm();renderCards($('siteSearch').value);renderManage();toast(id?'تغییرات ذخیره شد.':'کانفیگ جدید اضافه شد.');});
+  $('cancelEdit').addEventListener('click',resetForm);
+  $('settingsForm').addEventListener('submit',e=>{e.preventDefault();const p=$('newPassword').value,c=$('confirmPassword').value,t=$('telegramUser').value.trim().replace(/^@/,'');if(p&&p.length<4)return toast('رمز باید حداقل ۴ کاراکتر باشد.');if(p&&p!==c)return toast('رمز جدید و تکرار آن یکسان نیستند.');if(t&&!/^[A-Za-z0-9_]{5,32}$/.test(t))return toast('آیدی تلگرام را بدون @ و درست وارد کن.');if(p)localStorage.setItem('cp_owner_password',p);localStorage.setItem('cp_telegram_user',t);$('newPassword').value='';$('confirmPassword').value='';toast('تنظیمات ذخیره شد.');});
+  document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>hide(b.dataset.close)));
+  ['ownerLogin','ownerPanel','paymentNotice','configReveal'].forEach(id=>$(id).addEventListener('click',e=>{if(e.target===$(id))hide(id);}));
+  $('cancelTransfer').addEventListener('click',()=>{if(timer)clearInterval(timer);timer=null;hide('paymentNotice');});
+  $('copyConfig').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('revealText').value);toast('متن کانفیگ کپی شد.');}catch{ $('revealText').select();toast('متن را انتخاب و کپی کن.');}});
+  renderCards();renderManage();
+})();
+</script>
+</body></html>
